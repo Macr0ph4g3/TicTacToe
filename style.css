@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header {
+    display: flex;
+    background-color: lightslategray;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.boardHeader {
+    display: flex;
+    background-color: rgb(136, 152, 168);
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+.center {
+    display: grid;
+    height: 554px;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+}
+.gameBoard {
+    display: grid;
+    grid-template-columns: 150px 150px   150px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 3px;
+    background-color: black;
+
+
+}
+.gridSquare {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    cursor: default;
+    user-select: none
+}
+
+.gridSquare:hover {
+    background-color: rgb(183, 224, 231);
+}
+
+.boardUI {
+    display: flex;
+    height: 84px;
+    background-color: lightsteelblue;
+    justify-content: center;
+    align-items: center;
+
+}
+.button {
+    margin-right: 55px;
+    font-size: 25px;
+
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    height: 5vh;
+    background-color: lightsalmon;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
