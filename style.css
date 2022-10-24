@@ -50,7 +50,7 @@ table {
 .header {
     display: flex;
     background-color: lightslategray;
-    height: 130px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     font-size: 60px;
@@ -66,17 +66,20 @@ table {
 }
 .center {
     display: grid;
-    height: 554px;
+    height: 69vh;
     background-color: white;
     justify-content: center;
     align-content: center;
+    grid-template-columns: 100px 50vw 100px;
+    justify-content: space-evenly;
 }
 .gameBoard {
     display: grid;
-    grid-template-columns: 150px 150px   150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-rows: 20vh 20vh 20vh ;
+    grid-template-columns: 13vw 13vw 13vw;
     gap: 3px;
     background-color: black;
+    justify-self: center;
 
 
 }
@@ -96,10 +99,11 @@ table {
 
 .boardUI {
     display: flex;
-    height: 84px;
+    height: 50px;
     background-color: lightsteelblue;
     justify-content: center;
     align-items: center;
+    font-size: 25px
 
 }
 .button {
@@ -116,24 +120,22 @@ table {
 
 .footer {
     display: flex;
-    height: 5vh;
+    height: 3vh;
     background-color: lightsalmon;
     align-items: center;
     justify-content: flex-end;
 }
 
 #overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    height: 100%; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(0,0,0,0.5); 
     align-items: center;
     justify-content: center;
     font-size: 50px;
@@ -161,4 +163,16 @@ table {
     height: 120px;
     width: 190px;
 
+}
+
+.playerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -9,15 +9,29 @@
 </head>
 <body>
     <div class="header">Tic-Tac-Toe</div>
+
+
+
+    </div>
     <div class="body">
         <div id="overlay">
             <div><span id="victory"></span></div>
             <div class = "overlayText"><button id="reset">Play Again?</button></div>
         </div>
         <div class="boardHeader">
-            <p><span class="turnCounter">Player Ones</span> turn</p>
+            <p><span class="turnCounter">Player Ones</span></p>
         </div>
         <div class="center">
+            <div class="playerInfo">
+                <div>
+                    <span class="playerOneName">playerOneName</span>
+                </div>
+                <div class="score">
+                    score
+                    <span class="playerOneScore">playerOneScore</span>
+                </div>
+            </div>
+
             <div class="gameBoard"> 
                 <div class="gridSquare"  data-index="0" ></div>
                 <div class="gridSquare"  data-index="1" ></div>
@@ -28,11 +42,19 @@
                 <div class="gridSquare"  data-index="6" ></div>
                 <div class="gridSquare"  data-index="7" ></div>
                 <div class="gridSquare"  data-index="8" ></div>
-     
+            </div>
+            <div class="playerInfo">
+                <div >
+                    <span class="playerTwoName">playerTwoName</span>
+                </div>
+                <div class="score">
+                    Score
+                    <span class="playerTwoScore">playerTwoScore</span>
+                </div>
             </div>
         </div>
         <div class="boardUI">
-            <div class="button">New Game</div>
+            <div class="Opponent"><span>Player</span></div>
 
         </div>
         <div class="footer">
